@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
     "url": "https://github.com/kakahimita/express-mongo/issues"
   },
   "homepage": "https://github.com/kakahimita/express-mongo#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
