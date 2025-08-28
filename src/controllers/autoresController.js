@@ -26,6 +26,7 @@ class AutorController {
       }
     }
   
+    //comentario
   
     static cadastrarAutor = async (req, res) => {
       try {
