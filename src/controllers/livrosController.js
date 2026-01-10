@@ -80,10 +80,12 @@ class LivroController {
     try {
       const { editora, titulo } = req.query;
 
+      const regex = new RegExp(titulo, "i");
+
       const buscar = {};
 
       if (editora) buscar.editora = editora;
-      if (titulo) buscar.titulo = titulo;
+      if (titulo) buscar.titulo = regex;
 
       const livrosResultado = await livros.find(buscar);
 
